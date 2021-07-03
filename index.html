@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="751234110891-lraov9cgnvh2ueat1nvlihndd70vjn5i.apps.googleusercontent.com">
+    <link rel="icon" href="image/chuva.PNG" sizes="16x16"><!-- Coloquei o icone da chuva, já que o projeto é destinado da chuva. -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
+    <title>Chuva project SLACA</title>
+</head>
+<body>
+    <aside>
+        <div class="div-aside">
+            <header>
+                <h3>SLACA 2019</h3>
+            </header>
+            <figure><img src="image/logo.svg" alt="Logo SLACA"></figure>
+            <nav>
+                <div><section><a href="#"><b>Apresentação</a></b></section></div>
+                <div><section><a href="#"><b>comitês</a></b></section></div>
+                <div><section><a href="#"><b>Autores</a></b></section></div>
+                <div><section><a href="#"><b>Eixos Temáticos</b></a></section></div>
+                <div><section><a href="#"><b>Trabalhos</a></b></section></div>
+                <div><section><a href="#"><b>Contato</b></a></section></div>
+            </nav>
+        </div>
+    </aside>
+    <header>
+        <div class="right-side">
+            <div class="info-header">
+                <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
+                <pre>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</pre>
+                <p>ISSN: 1234-5678</p>
+            </div>
+            <div class="language">
+                <select name="language" id="language">  
+                    <option value="pt" selected="selected">PT, BR</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+            <div class="google"><div class="g-signin2 " data-onsuccess="onSignIn"></div><a href="#" onclick="signOut();">Sign out</a></div><!-- Sei que não estava no figma e nem foi pedido, mas andei pesquisando e achei interessante colocar o login do google e coloquei isso como um desafio para mim.-->
+        </div>
+    </header>
+    <main>
+        <div class="container" id="container">
+            <div class="top-container">
+            <h2 class="container-first">Análise sensorial de preparações funcionais desenvolvidas para escolares <br> entre 09 e 15 anos, do município de Campinas/SP</h2>
+                <div class="cite-work">
+                    <section style="margin-left: 25px;"><!-- Está um pouco maior do que o original -->
+                        <form action="download.php" method="POST">
+                            <input type="button" value="Download" style="padding: 7px 30px; background-image: url(image/download.svg); background-repeat: no-repeat; background-position: 10px 6px; float: left;">
+                        </form>
+                        <input type="button" style="padding: 7px 20px; background-image: url(image/star.svg); background-repeat: no-repeat; background-position: center; margin-left: 10px;">
+                        <input type="button" style="padding: 7px 20px; background-image: url(image/doi.svg); background-repeat: no-repeat; background-position: center;">
+                    </section>
+                    <div><p>COMO CITAR ESSE TRABALHO?</p></div>
+                </div>
+            </div>
+            <div class="top">
+                <div class="video">
+                    <img src="image/video.svg" alt="video"><!-- API de video -->
+                </div>
+                <div class="details"><!-- Não consegui colocar o scroll na div de baixo, só consegui colocar o scroll na div pai dela -->
+                    <section>
+                        <h2>Detalhes</h2>
+                    </section>
+                    <div>
+                        <p>Tipo de Apresentação:</p><h4>Pôster</h4>
+                        <p>Eixo temátioco:</p><h4>Alimentação e saúde</h4><h4>(AS)</h4><br>
+                        <p>Palavras-chaves:</p><h4>Alimentos</h4><h4>funcionais, alimentação escolar.</h4>
+                        <br>
+                        <br>
+                        <h4>Autores:</h4><br>
+                        <p class="names">
+                            Galileo Galilei¹<br>
+                            Berta Lange de Morretes²<br>
+                            Isaac Newton³<br>
+                            Cesar Lattes¹<br>
+                            Stephen Hawking⁴<br>
+                        </p>
+                        <br><br>
+                        <p class="universit">
+                            <cite>
+                                ¹Universidade Estadual de Campinas<br>
+                                ²Universidade de São Paulo<br>
+                                ³Instituto Nacional de Pesquisas Espaciais<br>
+                                ⁴Universidade Federal do Rio de Janeiro<br>
+                            </cite>
+                        </p><br><br>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, alias! Dolor hic explicabo dolorem debitis veritatis voluptatum tempora dolorum temporibus architecto sint? Aspernatur quam magnam esse, necessitatibus animi aliquam libero.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="summary">
+                <section>
+                    <h2>Resumo</h2>
+                </section>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant. <input type="button" value="ver mais" class="see-more" id="showSeeMore" onclick="showSummary()">
+                </p>
+                
+                    <div class="hidden" id="seeMore">
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                            <br>
+                            <br>
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                            <br>
+                            <br>
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.<input type="button" value="ver menos" class="see-more" id="hiddenSeeMore" onclick="hiddenSummary()">
+                        </p>
+                    </div>
+                </p>
+            </div>
+            <div class="discussions">
+                <section>
+                    <h2>Discussões</h2>
+                </section>
+                <div class="share-ideas" id="shareIdeas">
+                    <h3>Compartilhe suas ideias ou dúvidas com os autores!</h3>
+                    <div class="images-shareideas">
+                        <img src="image/share1.svg" alt="">
+                        <img src="image/share2.svg" alt="">
+                        <img src="image/share3.svg" alt="">
+                    </div>
+                    <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+                    <input type="button" name="createTopic" class="createTopic-button" value="+ criar tópico" onclick="createTopic()">
+                </div>
+                <div class="hiddentopic" id="createTopic">
+                    <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                    <div class="assunto">
+                        <h2>Assunto</h2> 
+                        <form action="discussions.php" method="POST">
+                            <input type="text" placeholder="     Defina um tópico sucinto para notificar os autores... " id="topic" name="topic" autocomplete="off">
+                    </div>
+                    <div class="conteudo">
+                        <h2>Conteúdo</h2>
+                        <textarea id="textArea" name="textArea"></textarea>
+                        <span>
+                            <input type="button" id="bold" onclick="boldLatter()"><input type="button" id="italic" onclick="italicLatter()"><input type="submit" value="Enviar" id="sendCommit" onclick="creatDivTopic ()"><!-- Não consegui reverter as funções dos botões -->
+                        </span>
+                        </form>
+                    </div>
+                </div>
+                <div class="all-topics" id="allTopics">
+                </div>
+                    <div class="question" id="questions2">
+                        <h3 id="questionTopic2">Assunto da pergunta aparece aqui</h3>
+                        <p id="namePerson2">Carlos Henrique Santos</p><br>
+                        <pre id="commit2">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</pre><br>
+                        <div>
+                            <input type="button" class="more-info">
+                            <input type="submit" value="" id="like2" class="like">
+                            <h6>1 like</h6>
+                            <h6>1 resposta</h6>
+                        </div>
+                </div>
+                <div class="question" id="questions3">
+                    <h3 id="questionTopic3">Assunto da pergunta aparece aqui</h3>
+                    <p id="namePerson3">Carlos Henrique Santos</p><br>
+                    <pre id="commit3">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</pre><br>
+                    <div>
+                        <input type="button" class="more-info">
+                        <input type="submit" value="" id="like3" class="like">
+                        <h6>1 like</h6>
+                        <h6>1 resposta</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="#" target="_blank">
+            <img src="image/footer.svg" alt="Rodapé"><!-- No figma esta como background e não consigo pegar font, font-size, espaçamento das linhas, etc... Mas fiz toda a imagem dentro do a, por causa do botão "Saiba Mais" -->
+        </a>
+    </footer>
+    <script src="action.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+</body>
+</html>

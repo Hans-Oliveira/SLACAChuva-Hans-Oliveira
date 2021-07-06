@@ -30,7 +30,7 @@ body {
 .div-aside {
     grid-area: nav;
 }
-main {
+.container {
     grid-area: main;
 }
 footer {
@@ -68,7 +68,7 @@ footer {
     cursor: pointer;
 }
 .div-aside nav div {
-    border-bottom: 2px solid #E5E5E5;;
+    border-bottom: 2px solid #E5E5E5;
 }
 
 /* HEADER */
@@ -129,13 +129,13 @@ footer {
     margin: 20px 2%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5% 31% auto auto;
-    grid-gap: 20px;
+    grid-template-rows: 5% 31% auto auto 15%;
     grid-template-areas: 
     'topContainer'
     'top'
     'summary'
-    'discussions';
+    'discussions'
+    'footer';
 }
 .top-container {
     grid-area: topContainer;
@@ -273,6 +273,11 @@ footer {
     box-sizing: border-box;
     border-radius: 3px;
     height: max-content;
+    margin-top: 2%;
+}
+.topics-container {
+    height: 370px;
+    overflow: auto;
 }
 .discussions section {
     display: flex;
@@ -423,6 +428,9 @@ textarea {
     border-radius: 4px;
     margin: 17px 1%;
 }
+.all-topics {
+    margin-top: 50px;
+}
 .question h3 {
     color: var(--buttonColors);
     font-family: var(--fontFamily2);
@@ -477,11 +485,30 @@ textarea {
 
 /* FOOTER */
 
-footer{
-    width: 98%;
-    display: flex;
+footer {
+    display: grid;
+    font-family: var(--fontFamily2);
+    width: 95%;
+    margin-left: 1%;
+    height: max-content;
+    grid-template-columns: 15% 80%;
+    margin-bottom: 2%;
     align-items: center;
-    justify-content: center;
+    margin-top: 4%;
+    border-top: 1px solid #b6b6b6;
+    height: 135px;
+}
+
+footer a {
+    background-color: #71478e;
+    padding: 3% 30%;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--colorStandard);
+}
+footer p {
+    font-size: var(--fontSizeMedium);
+    margin-left: 2%;
 }
 
 /* FONTS */

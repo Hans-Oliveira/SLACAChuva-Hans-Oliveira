@@ -44,8 +44,8 @@
             <div class="google"><div class="g-signin2 " data-onsuccess="onSignIn"></div><a href="#" onclick="signOut();">Sign out</a></div><!-- Sei que não estava no figma e nem foi pedido, mas andei pesquisando e achei interessante colocar o login do google e coloquei isso como um desafio para mim.-->
         </div>
     </header>
-    <main>
-        <div class="container" id="container">
+    <div class="container" id="container">
+        <main>
             <div class="top-container">
             <h2 class="container-first">Análise sensorial de preparações funcionais desenvolvidas para escolares <br> entre 09 e 15 anos, do município de Campinas/SP</h2>
                 <div class="cite-work">
@@ -144,38 +144,46 @@
                         </form>
                     </div>
                 </div>
-                <div class="all-topics" id="allTopics">
-                </div>
-                    <div class="question" id="questions2">
-                        <h3 id="questionTopic2">Assunto da pergunta aparece aqui</h3>
-                        <p id="namePerson2">Carlos Henrique Santos</p><br>
-                        <pre id="commit2">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</pre><br>
+                <div class="topics-container">
+                    <div class="all-topics" id="allTopics">
+                    </div>
+                        <div class="question" id="questions2">
+                            <h3 id="questionTopic2">Assunto da pergunta aparece aqui</h3>
+                            <p id="namePerson2">Carlos Henrique Santos</p><br>
+                            <pre id="commit2">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</pre><br>
+                            <div>
+                                <input type="button" class="more-info">
+                                <input type="submit" value="" id="like2" class="like">
+                                <h6>1 like</h6>
+                                <h6>1 resposta</h6>
+                            </div>
+                    </div>
+                    <div class="question" id="questions3">
+                        <h3 id="questionTopic3">Assunto da pergunta aparece aqui</h3>
+                        <p id="namePerson3">Carlos Henrique Santos</p><br>
+                        <pre id="commit3">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</pre><br>
                         <div>
                             <input type="button" class="more-info">
-                            <input type="submit" value="" id="like2" class="like">
+                            <input type="submit" value="" id="like3" class="like">
                             <h6>1 like</h6>
                             <h6>1 resposta</h6>
                         </div>
-                </div>
-                <div class="question" id="questions3">
-                    <h3 id="questionTopic3">Assunto da pergunta aparece aqui</h3>
-                    <p id="namePerson3">Carlos Henrique Santos</p><br>
-                    <pre id="commit3">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</pre><br>
-                    <div>
-                        <input type="button" class="more-info">
-                        <input type="submit" value="" id="like3" class="like">
-                        <h6>1 like</h6>
-                        <h6>1 resposta</h6>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
     <footer>
-        <a href="#" target="_blank">
-            <img src="image/footer.svg" alt="Rodapé"><!-- No figma esta como background e não consigo pegar font, font-size, espaçamento das linhas, etc... Mas fiz toda a imagem dentro do a, por causa do botão "Saiba Mais" -->
-        </a>
-    </footer>
+        <div>
+            <img src="image/galoá.png" alt="Galoá Logo"><br><br>
+            <a href="#">Saiba mais</a>
+        </div>
+        <section>
+            <p><b>Preservar a memória do evento e ampliar o acesso ao conhecimento científico</b> gerado em eventos é a razão de ser da plataforma Galoá proceedings.</p><br>
+            <p>Os trbalhos publicados aqui têm maior alcance e ficam disponíveis para toda a comunidade científica, mantendo aceso o <br> debate científico fomentado pelos encontros e aumentando o impacto do evento.</p>
+        </section>
+    </footer>        
+    </div>
+
     <script src="action.js"></script>
     <script src="jquery-3.6.0.min.js"></script>
 </body>

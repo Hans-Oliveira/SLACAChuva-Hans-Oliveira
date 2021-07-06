@@ -41,7 +41,6 @@ footer {
 
 .div-aside header {
     background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
-    color: white;
     font-family: var(--fontFamily1);
     font-size: 30px;
     display: flex;

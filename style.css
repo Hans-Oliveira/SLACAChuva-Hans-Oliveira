@@ -42,7 +42,7 @@ footer {
 .div-aside header {
     background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
     color: white;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
     display: flex;
     text-align: center;
@@ -163,7 +163,7 @@ footer {
 }
 .cite-work div {
     margin: 5px 50px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     text-align: right;
     color: var(--buttonColors);
@@ -493,8 +493,8 @@ footer{
 
 /* FONTS */
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 /* VARIAVEIS */

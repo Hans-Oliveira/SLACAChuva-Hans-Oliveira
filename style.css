@@ -301,7 +301,7 @@ label[for="bt_menu"]{
     height: 370px;
     overflow: auto;
 }
-.discussions section {
+.section-discussions {
     display: flex;
     background: var(--headersColors);
     border: 1px solid #ECECEC;
@@ -326,7 +326,7 @@ label[for="bt_menu"]{
 .share-ideas h3 {
     font-family: var(--fontFamily1);
     color: var(--buttonColors);
-    font-size: 18px;
+    font-size: var(--varyFontSize);
     font-weight: bold;
     text-align: center;
 }
@@ -441,6 +441,51 @@ textarea {
     font-family: var(--fontFamily2);
 }
 
+/* CREATE TOPIC SUCESSES */
+
+.create-sucesse {
+    text-align: center;
+    border-bottom: 1px solid #E7E7E7;
+}
+.create-sucesse h3{
+    font-family: var(--fontFamily1);
+    font-weight: bold;
+    font-size: var(--varyFontSize);
+    color: var(--buttonColors);
+}
+.create-sucesse p {
+    font-family: var(--fontFamily2);
+    font-size: var(--fontSizeLittle);
+}
+.create-sucesse a {
+    font-family: var(--fontFamily1);
+    font-size: var(--fontSizeLittle);
+    color: #F48F44;
+}
+.create-sucesse input {
+    cursor: pointer;
+}
+.divDaddy {
+    background-color: #DDDDDD;
+    display: block;
+    margin: 17px 1%;
+}
+.divDaddy p {
+    font-family: var(--fontFamily2);
+    font-weight: bold;
+    font-size: var(--fontSizeMedium);
+    color: #707070;
+}
+.divDaddy a {
+    font-family: Segoe UI; /* Não achei essa font, nem no google fonts */
+    text-decoration-line: underline;
+    font-size: var(--fontSizeLittle);
+    color: var(--buttonColors);
+}
+.section-daddy {
+    text-align: center;
+}
+
 /* QUESTIONS */
 
 .question {
@@ -547,6 +592,7 @@ footer p {
     --fontSizeMedium: 15px;
     --fontSizeBig: 20px;
     --colorStandard: white;
+    --varyFontSize: 18px;
 }
 
 /* HOVER's */

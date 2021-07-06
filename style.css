@@ -172,19 +172,13 @@ footer {
     grid-area: top;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .summary {
     grid-area: summary;
 }
 .discussions {
     grid-area: discussions;
-}
-
-/* VIDEO */
-
-.top {
-    display: flex;
-    justify-content: space-between;
 }
 
 /* DETALHES */

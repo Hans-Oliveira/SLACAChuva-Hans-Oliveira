@@ -41,6 +41,7 @@ footer {
 
 .div-aside header {
     background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+    color: var(--colorStandard);
     font-family: var(--fontFamily1);
     font-size: 30px;
     display: flex;
@@ -53,13 +54,12 @@ footer {
     box-shadow: 4px 0px 13px -7px #AAAA, 5px 5px 20px 5px rgba(170,170,170,0);
     height: 100%;
     position: fixed;
-    background-color: white;
     width: max-content;
 }
 .div-aside a {
     font-family: var(--fontFamily2);
     font-weight: 500;
-    font-size: 15px;
+    font-size: var(--fontSizeMedium);
     color: #725C5C;
     text-decoration: none;
 }
@@ -81,7 +81,7 @@ footer {
     width: 100%;
 }
 .info-header p {
-    font-size: 14px;
+    font-size: var(--fontSizeLittle);
     padding: 16px auto;
 }
 .info-header pre {
@@ -120,7 +120,7 @@ footer {
     color: var(--buttonColors);
     font-family: var(--fontFamily1);
     font-weight: 900;
-    font-size: 20px;
+    font-size: var(--fontSizeBig);
     line-height: 25px;
     letter-spacing: 0.05em;
     margin: 20px 0px;
@@ -155,7 +155,7 @@ footer {
     background-color: var(--buttonColors);
     border-radius: 4px;
     font-family: var(--fontFamily1);
-    color: white;
+    color: var(--colorStandard);
     font-weight: 500;
     font-size: 16px;
     text-align: center;
@@ -163,7 +163,7 @@ footer {
 .cite-work div {
     margin: 5px 50px;
     font-family: var(--fontFamily1);
-    font-size: 15px;
+    font-size: var(--fontSizeMedium);
     text-align: right;
     color: var(--buttonColors);
     text-align: right;
@@ -192,7 +192,7 @@ footer {
 .details h2 {
     font-family: var(--fontFamily1);
     font-weight: 500;
-    font-size: 20px;
+    font-size: var(--fontSizeBig);
     color: #4E4E4E;
     margin-left: 5%;
 }
@@ -253,20 +253,20 @@ footer {
 }
 .summary section h2 {
     font-family: var(--fontFamily1);
-    font-size: 20px;
+    font-size: var(--fontSizeBig);
 }
 .summary p {
     font-family: var(--fontFamily2);
     margin: 20px;
-    font-size: 14px;
+    font-size: var(--fontSizeLittle);
     line-height: 23px;
     letter-spacing: 0.03em;
     color: #5C5C5C;
 }
 .see-more {
-    background-color: white;
+    background-color: var(--colorStandard);
     cursor: pointer;
-    font-size: 14px;
+    font-size: var(--fontSizeLittle);
     color: var(--buttonColors);
     font-weight: 700;
     font-family: var(--fontFamily2);
@@ -291,7 +291,7 @@ footer {
 }
 .discussions h2 {
     font-family: var(--fontFamily1);
-    font-size: 20px;
+    font-size: var(--fontSizeBig);
 }
 .share-ideas {
     display: grid;
@@ -329,8 +329,8 @@ footer {
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
     border-radius: 4px;
     font-family: var(--fontFamily2);
-    font-size: 15px;
-    color: white;
+    font-size: var(--fontSizeMedium);
+    color: var(--colorStandard);
     width: 133px;
     font-weight: bold;
     height: 32px;
@@ -362,7 +362,7 @@ footer {
     border-radius: 3px;
     width: 100%;
     height: 35px;
-    font-size: 14px;
+    font-size: var(--fontSizeLittle);
 }
 textarea {
     border: 1px solid #CCCCCC;
@@ -415,8 +415,8 @@ textarea {
     height: 31px;
     cursor: pointer;
     margin-left: 82%;
-    color: white;
-    font-size: 15px;
+    color: var(--colorStandard);
+    font-size: var(--fontSizeMedium);
     font-family: var(--fontFamily2);
 }
 
@@ -444,7 +444,7 @@ textarea {
 }
 .question pre {
     font-family: var(--fontFamily2);
-    font-size: 14px;
+    font-size: var(--fontSizeLittle);
     color: #4D4D4D;
     margin-left: 25px;
 }
@@ -452,7 +452,7 @@ textarea {
     background-image: url(image/moreinfo.svg);
     width: 5px;
     height: 18px;
-    background-color: white;
+    background-color: var(--colorStandard);
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -469,7 +469,7 @@ textarea {
 }
 .question h6 {
     font-weight: 350;
-    font-size: 14px;
+    font-size: var(--fontSizeLittle);
     color: #757575;
     font-family: var(--fontFamily2);
 }
@@ -494,7 +494,6 @@ footer{
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 /* VARIAVEIS */
 
@@ -503,6 +502,10 @@ footer{
     --headersColors: #FDF1EB;    
     --fontFamily1: 'Roboto', sans-serif;
     --fontFamily2: 'Quicksand', sans-serif;
+    --fontSizeLittle: 14px;
+    --fontSizeMedium: 15px;
+    --fontSizeBig: 20px;
+    --colorStandard: white;
 }
 
 /* HOVER's */

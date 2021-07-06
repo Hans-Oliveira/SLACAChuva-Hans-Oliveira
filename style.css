@@ -100,7 +100,7 @@ label[for="bt_menu"]{
     font-size: var(--fontSizeLittle);
     padding: 16px auto;
 }
-.info-header pre {
+.p-infoHeader {
     font-family: var(--fontFamily1);
     font-size: 22px;
 }
@@ -585,7 +585,7 @@ footer p {
 
 
 /* MIDIA QUERIES */
-
+/* ficou um pouco bagunçado mas consegui fazer */
 @media only screen and (max-width: 1774px) {
     .right-side {
         grid-template-columns: 41% 7% 12%;
@@ -595,11 +595,13 @@ footer p {
         height: 50%;
     }
 }
+
 @media only screen and (max-width: 1478px) {
     .right-side {
         grid-template-columns: 56% 9% 13%;
     }
 }
+
 @media only screen and (max-width: 1380px) {
     body {
         display: grid;
@@ -638,12 +640,16 @@ footer p {
         display: none;
     }
     #bt_menu:checked ~ span {
-        display: flex;
+        display: block;
+        background-color: var(--buttonColors);
+        position: absolute;
+        top: 70%;
     }
     .div-aside nav div {
         margin: 1%;
     }
 }
+
 @media only screen and (max-width: 1186px) {
     .right-side {
         justify-content: unset;
@@ -652,8 +658,6 @@ footer p {
     .info-header {
         margin-left: 0px;
     }
-}
-@media only screen and (max-width: 1186px) {
     body {
         display: grid;
         grid-template-rows: 3% 7% 90%;
@@ -682,5 +686,28 @@ footer p {
     footer div {
         width: 28%;
         margin-bottom: 2%;
+    }
+    .share-ideas {
+        display: block;
+    }
+    .createTopic-button {
+        margin-left: 50%;
+    }
+}
+
+@media only screen and (max-width: 795px) {
+    footer a {
+        padding: 3% 10%;
+    }
+    .video, .summary, .discussions, .details {
+        width: 60%;
+        margin-left: 25%;
+    }
+    .images-shareideas {
+        display: block;
+        margin-left: 20%;
+    }
+    .createTopic-button {
+        margin-left: 15%;
     }
 }

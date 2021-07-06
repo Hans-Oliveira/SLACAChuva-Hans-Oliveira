@@ -2,6 +2,7 @@ function showSummary(){
     let div = document.getElementById("seeMore");
     div.style.display = "block";
     let container = document.getElementById("container");
+    container.style.gridTemplateRows = "4% 30% 21% 40% 15%";
     let showSeeMore = document.getElementById("showSeeMore");
     showSeeMore.style.display = "none";
     let hiddenSeemore = document.getElementById("hiddenSeeMore");
@@ -10,6 +11,8 @@ function showSummary(){
 function hiddenSummary(){
     let div = document.getElementById("seeMore");
     div.style.display = "none";
+    let container = document.getElementById("container");
+    container.style.gridTemplateRows = "5% 30% 11% 45% 15%";
     let hiddenSeemore = document.getElementById("hiddenSeeMore");
     hiddenSeemore.style.display = "none";
     let showSeeMore = document.getElementById("showSeeMore");
@@ -48,7 +51,8 @@ function creatDivTopic (){
     div.className = "question";
     let h3 = document.createElement("h3");
     let p = document.createElement("p");
-    let pre = document.createElement("pre");
+    let pre = document.createElement("p");
+    pre.className = "p-commit"
     let br = document.createElement("br");
     let div2 = document.createElement("div");
     let input1 = document.createElement("input");

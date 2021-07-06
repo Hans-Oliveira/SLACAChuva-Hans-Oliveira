@@ -10,7 +10,6 @@
 
 body {
     display: grid;
-    grid-template-rows: 1fr;
     grid-template-columns: 220px 1fr;
     grid-template-areas: 
     'nav rightside'
@@ -20,9 +19,8 @@ body {
 .right-side {
     display: grid;
     grid-area: rightside;
-    background-color: var(--headersColors);
     height: 68px;
-    grid-template-columns:  41% 7% 17%;
+    grid-template-columns:  41% 7% 10%;
     grid-template-areas: 
     'info-header language google';
     justify-content: space-between;
@@ -70,9 +68,27 @@ footer {
 .div-aside nav div {
     border-bottom: 2px solid #E5E5E5;
 }
+label[for="bt_menu"]{
+    padding: 5px;
+    background-color: #fff;
+    color: #222;
+    font-family: "Arial";
+    text-align: center;
+    font-size: 29px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+.div-aside input {
+    display: none;
+}
 
 /* HEADER */
 
+.header-main {
+    background-color: var(--headersColors);
+}
 .info-header {
     font-family: var(--fontFamily1);
     margin-left: 6%;
@@ -123,20 +139,19 @@ footer {
     font-size: var(--fontSizeBig);
     line-height: 25px;
     letter-spacing: 0.05em;
-    margin: 20px 0px;
 }
 .container {
-    margin: 20px 2%;
+    margin: 0px 2%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5% 31% auto auto 15%;
+    grid-template-rows: 5% 30% 11% 45% 15%;
     grid-template-areas: 
     'topContainer'
     'top'
     'summary'
     'discussions'
     'footer';
-    width: 95%;
+    width: 90%;
 }
 .top-container {
     grid-area: topContainer;
@@ -180,6 +195,12 @@ footer {
 }
 .discussions {
     grid-area: discussions;
+}
+
+/* VIDEO */
+
+.video img {
+    width: 90%;
 }
 
 /* DETALHES */
@@ -235,7 +256,7 @@ footer {
     border-radius: 3px;
     height: max-content;
     align-self: stretch;
-    margin-top: 30px;
+    margin-top: 1%;
 }
 .summary section {
     display: flex;
@@ -445,7 +466,7 @@ textarea {
     color: #5C5C5C;
     margin-left: 25px;
 }
-.question pre {
+.p-commit {
     font-family: var(--fontFamily2);
     font-size: var(--fontSizeLittle);
     color: #4D4D4D;
@@ -469,19 +490,20 @@ textarea {
     height: 19px;
     width: 27px;
     background-position: center;
+    margin: 0px 1%;
 }
 .question h6 {
     font-weight: 350;
     font-size: var(--fontSizeLittle);
     color: #757575;
     font-family: var(--fontFamily2);
+    margin: 0px 1%;
 }
 .question div {
     display: flex;
     margin-left: 24px;
     margin-bottom: 18px;
-    width: 11%;
-    justify-content: space-between;
+    width: 90%;
 }
 
 /* FOOTER */
@@ -491,13 +513,10 @@ footer {
     font-family: var(--fontFamily2);
     width: 95%;
     margin-left: 1%;
-    height: max-content;
     grid-template-columns: 15% 80%;
     margin-bottom: 2%;
     align-items: center;
-    margin-top: 4%;
     border-top: 1px solid #b6b6b6;
-    height: 135px;
 }
 
 footer a {
@@ -567,6 +586,101 @@ footer p {
 
 /* MIDIA QUERIES */
 
-@media only screen and (max-width: 600px) {
-
-} /* Como não tinha um modelo mobile específico fiz tudo em display grid. Acredito que assim seja mais perto de um modelo não tão otimizado, como foi pedido na descrição do teste. */
+@media only screen and (max-width: 1774px) {
+    .right-side {
+        grid-template-columns: 41% 7% 12%;
+    }
+    footer {
+        grid-template-columns: 27% 80%;
+        height: 50%;
+    }
+}
+@media only screen and (max-width: 1478px) {
+    .right-side {
+        grid-template-columns: 56% 9% 13%;
+    }
+}
+@media only screen and (max-width: 1380px) {
+    body {
+        display: grid;
+        grid-template-columns:  100%;
+        grid-template-rows: 3% 3% 85%;
+        grid-template-areas: 
+        'nav'
+        'rightside'
+        'main';
+    }
+    .div-aside {
+        position: relative;
+        display: flex;
+        box-shadow: none;
+    }
+    .div-aside img {
+        height: 100%;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+    }
+    .div-aside nav div {
+        border: none;
+    }
+    .div-aside section:hover {
+        border: none;
+    }
+    .div-aside section {
+        padding: 0px;
+    }
+    label[for="bt_menu"]{
+        display: block;
+    }
+    .div-aside span {
+        display: none;
+    }
+    #bt_menu:checked ~ span {
+        display: flex;
+    }
+    .div-aside nav div {
+        margin: 1%;
+    }
+}
+@media only screen and (max-width: 1186px) {
+    .right-side {
+        justify-content: unset;
+        display: block;
+    }
+    .info-header {
+        margin-left: 0px;
+    }
+}
+@media only screen and (max-width: 1186px) {
+    body {
+        display: grid;
+        grid-template-rows: 3% 7% 90%;
+    }
+    .language, .google {
+        width: 20%;
+        margin-left: 50%;
+    }
+    .container {
+        grid-template-rows: 10% 35% 15% 32% 8%;
+        width: 94%;
+    }
+    .top-container {
+        display: block;
+        text-align: center;
+    }
+    .top {
+        display: block;
+    }
+    .details, .summary, .discussions {
+        width: 90%;
+    }
+    footer {
+        display: block;
+    }
+    footer div {
+        width: 28%;
+        margin-bottom: 2%;
+    }
+}

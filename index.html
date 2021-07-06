@@ -19,16 +19,20 @@
             </header>
             <figure><img src="image/logo.svg" alt="Logo SLACA"></figure>
             <nav>
-                <div><section><a href="#"><b>Apresentação</a></b></section></div>
-                <div><section><a href="#"><b>comitês</a></b></section></div>
-                <div><section><a href="#"><b>Autores</a></b></section></div>
-                <div><section><a href="#"><b>Eixos Temáticos</b></a></section></div>
-                <div><section><a href="#"><b>Trabalhos</a></b></section></div>
-                <div><section><a href="#"><b>Contato</b></a></section></div>
+                <input type="checkbox" id="bt_menu">
+                <label for="bt_menu">&#9776;</label>
+                <span>
+                    <div><section><a href="#"><b>Apresentação</a></b></section></div>
+                    <div><section><a href="#"><b>comitês</a></b></section></div>
+                    <div><section><a href="#"><b>Autores</a></b></section></div>
+                    <div><section><a href="#"><b>Eixos Temáticos</b></a></section></div>
+                    <div><section><a href="#"><b>Trabalhos</a></b></section></div>
+                    <div><section><a href="#"><b>Contato</b></a></section></div>
+                </span>
             </nav>
         </div>
     </aside>
-    <header>
+    <header class="header-main">
         <div class="right-side">
             <div class="info-header">
                 <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
@@ -150,7 +154,7 @@
                         <div class="question" id="questions2">
                             <h3 id="questionTopic2">Assunto da pergunta aparece aqui</h3>
                             <p id="namePerson2">Carlos Henrique Santos</p><br>
-                            <pre id="commit2">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</pre><br>
+                            <p id="commit2" class="p-commit">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p><br>
                             <div>
                                 <input type="button" class="more-info">
                                 <input type="submit" value="" id="like2" class="like">
@@ -161,7 +165,7 @@
                     <div class="question" id="questions3">
                         <h3 id="questionTopic3">Assunto da pergunta aparece aqui</h3>
                         <p id="namePerson3">Carlos Henrique Santos</p><br>
-                        <pre id="commit3">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</pre><br>
+                        <p id="commit3" class="p-commit">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p><br>
                         <div>
                             <input type="button" class="more-info">
                             <input type="submit" value="" id="like3" class="like">
@@ -183,7 +187,6 @@
         </section>
     </footer>        
     </div>
-
     <script src="action.js"></script>
     <script src="jquery-3.6.0.min.js"></script>
 </body>

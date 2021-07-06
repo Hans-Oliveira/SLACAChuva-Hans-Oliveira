@@ -136,6 +136,7 @@ footer {
     'summary'
     'discussions'
     'footer';
+    width: 95%;
 }
 .top-container {
     grid-area: topContainer;
